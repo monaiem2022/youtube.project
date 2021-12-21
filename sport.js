@@ -241,7 +241,7 @@ $('.send').on('submit',function(q){
 
 
 $('.video_watch').on('click', function (e) { 
-    $('#mainVidew').text($(this).find('.title_video').text());
+    $('#mainVidew').text($(this).find('.video_title').text());
     $('.main_time').text($(this).find('.time_video').text());
     $('.main_view').text($(this).find('.view_video').text());
     $('.main_like').text($(this).find('.likeUnder').text());
