@@ -82,7 +82,7 @@ body.onload = function(){
    
     if(me<768 && me>!768){
         $('.main-video .under-video .video_title').css('font-size','80px');
-        $('.main-video .under-video .video_title').css('color','red');
+        $('.main-video .under-video .video_title').css('color','80px');
     }
      else
    
