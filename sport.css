@@ -19,28 +19,19 @@ body{
 .top-menu .fa-youtube{
     color: red;  
     cursor: pointer;
-    font-size: 25px;
+   
 }
 
 
 .top-menu .youtube{
     cursor: pointer;
-    font-family: arial,sans-serif,tahoma;
-    font-size: 25px;
-    font-weight: 600
 }
 
-.top-menu .fa-bars{
-    font-size: 25px;
-}
 
 .top-menu .egypt{
     color: gray;
     position: relative;
     bottom: 20px;
-    font-family: arial,sans-serif,tahoma;
-    font-weight: bold;
-    font-size: 12px;
     
 }
 
@@ -66,7 +57,7 @@ body{
 .top-menu #signButton{
     max-width: 95px;
     overflow: hidden;
-    font-family: arial,sans-serif,tahoma;
+    
     
 }
 
@@ -100,15 +91,7 @@ body{
 }
 
 
-.next-fixed-menu .address a{
-    
-    font-size: 16px;
-    font-weight: 500;
-    font-family: arial,sans-serif,tahoma;
-   
 
-   
-}
 
 
 
@@ -160,8 +143,7 @@ a:hover{
 .side-bar .home{
     position: relative;
     top: 13px;
-    font-size: 12px;
-    font-weight:400;
+
 }
 
 .side-bar .fa-compass{
@@ -171,8 +153,7 @@ a:hover{
 .side-bar .explore{
     position: relative;
     top: 13px;
-    font-size: 12px;
-    font-weight:400;
+    
 }
 
 .side-bar .fa-youtube{
@@ -182,8 +163,7 @@ a:hover{
 .side-bar .explore{
     position: relative;
     top: 13px;
-    font-size: 12px;
-    font-weight:400;
+
 }
 
 .side-bar .fa-book{
@@ -193,8 +173,7 @@ a:hover{
 .side-bar .library{
     position: relative;
     top: 13px;
-    font-size: 12px;
-    font-weight:400;
+  
 }
 
 
@@ -205,8 +184,7 @@ a:hover{
 .side-bar .history{
     position: relative;
     top: 13px;
-    font-size: 12px;
-    font-weight:400;
+   
 }
 /*end of top-menu*/
 
@@ -240,15 +218,12 @@ a:hover{
     margin-left: 10px;
     cursor: pointer;
     padding-right:15px;
-    font-weight: 350;
-    font-size: 20px;
+ 
 }
 
 .sport-icon span{
     cursor: pointer;
-    font-family: arial,sans-serif,tahoma;
-    font-weight: bold;
-    font-size: 16px;
+ 
 }
 
 
@@ -261,9 +236,6 @@ a:hover{
 
 
 .sport .main-video .channel-name .main_channelName{
-    font-family: arial,sans-serif,tahoma;
-    font-weight: 600;
-    font-size: 14px;
     position: relative;
     left: 2px;
 }
@@ -272,26 +244,19 @@ a:hover{
     padding-left: 50px;
     position: relative;
     bottom: 10px;
-    font-size: 14px;
     right: 7px;
     color: gray;
 }
 
 .sport .main-video .channel-name .main_description{
-     font-family: arial,sans-serif,tahoma;
-    font-size: 14px;
     padding-left: 45px;
 }
 
 
-.sport .main-video .channel-name .comments {
-    font-family: arial,sans-serif,tahoma;
-    font-size: 16px;
-    font-weight: 500;
-}
+
 
 .sport .main-video .channel-name .sorted {
-    font-family: arial,sans-serif,tahoma;
+    
     font-size: 16px;
     font-weight: bold;
 }
@@ -299,9 +264,7 @@ a:hover{
 .sport .main-video .channel-name .control .comment-div{
     padding-left: 13px;
     padding-bottom: 10px;
-    font-family: arial,sans-serif,tahoma;
-    font-size: 14px;
-    
+
 }
 
 .sport .main-video .channel-name .control  .comment-div div{
@@ -313,19 +276,9 @@ a:hover{
 
 
 .sport .main-video .under-video .video_title {
-   font-family: Arial,sans-serif,tahoma;
-    font-size: 18px;
     padding-top: 10px;
-
 }
 
-.sport .main-video .under-video .main_view{
-    color: gray;
-     font-size: 12px;
-    font-family: arial,sans-serif,tahoma;
-    font-weight: thin;
-    
-}
 
 
 .main-video .channel-name .main_image{
@@ -333,7 +286,7 @@ a:hover{
     top: 10px;
     border-radius: 50%;
     cursor: pointer;
-      height: 40px;
+    height: 40px;
     width: 40px;
 }
 
@@ -351,7 +304,11 @@ a:hover{
 
 
 
-
+.playall{
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
 
 
 
@@ -366,27 +323,15 @@ a:hover{
 
 
 .sport .video-list .video_watch .video_title{
-    font-family: arial,sans-serif,tahoma;
+    
     font-weight: thin;
     font-size: 18px;
 }
 
-.sport .video-list .video_watch .video_title{
-    font-family: Arial,sans-serif,tahoma;
-    font-size: 18px;
-   
-}
 
 
-.sport .video-list .video_watch .view_video,
-.sport .video-list .video_watch .time_video
 
-{
-    font-family: arial,sans-serif,tahoma;
-    font-weight: thin;
-    font-size: 12px;
-    color: gray;
-}
+
 
 
  .circle{
@@ -422,7 +367,7 @@ a:hover{
     border-top: none;
     border-left: none;
     border-right: none;
-    font-family: arial,sans-serif,tahoma;
+    
 }
 
 .control input {
@@ -446,9 +391,7 @@ a:hover{
     padding-right: 10px;
     padding-top: 30px;
     position: relative;
-   
-  
- 
+
   
 }
 
