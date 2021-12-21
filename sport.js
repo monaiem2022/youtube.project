@@ -6,7 +6,7 @@ var me  = screen.width;
 
 console.log(me);
 
-
+/*
 body.onload = function () {
     if(me===240 || me===280 || me==360 || me===375 || me===384 || me===320  || me===411 || me===412 || me===414 || me===480 || me===393
       || me===353){
@@ -74,6 +74,21 @@ body.onload = function () {
 }
 
 
+*/
+
+
+body.onload = function(){
+  "use strict";
+   
+    if(me<768 && me>!768){
+        $('.main-video .under-video .video_title').css('font-size','80px');
+        $('.main-video .under-video .video_title').css('color','red');
+    }
+     else
+   
+            $(body).css('background-color','yellow')
+       
+}
 
 
 // to let the user sign in and see his name on the top dynamic.
@@ -444,18 +459,4 @@ father.onclick = function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 

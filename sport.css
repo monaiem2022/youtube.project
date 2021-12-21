@@ -312,7 +312,7 @@ a:hover{
 
 
 
-.sport .main-video .under-video .title_video {
+.sport .main-video .under-video .video_title {
    font-family: Arial,sans-serif,tahoma;
     font-size: 18px;
     padding-top: 10px;
@@ -365,13 +365,13 @@ a:hover{
 }
 
 
-.sport .video-list .video_watch .title_video{
+.sport .video-list .video_watch .video_title{
     font-family: arial,sans-serif,tahoma;
     font-weight: thin;
     font-size: 18px;
 }
 
-.sport .video-list .video_watch .title_video{
+.sport .video-list .video_watch .video_title{
     font-family: Arial,sans-serif,tahoma;
     font-size: 18px;
    
@@ -399,10 +399,7 @@ a:hover{
 }
 
 
-.playall{
-    height: 300px;
-    overflow: scroll;
-}
+
 
 .sport .video_list .video_watch .subscribersUnder{
     padding-left: 50px;
@@ -438,6 +435,42 @@ a:hover{
 
 
 
+.sent{
+    height: 300px;
+    max-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    background-color: red;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    position: relative;
+   
+  
+ 
+  
+}
+
+.sent div{
+   
+    padding-bottom: 10px;
+}
+
+
+
+.message {
+    position: absolute;
+    top: 0;
+    background-color: green;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    line-height:30px;
+    text-align: center;
+     border: none;
+    color: red;
+}
 
 
 
@@ -445,5 +478,48 @@ a:hover{
 
 
 
+.sent2{
+    height: 300px;
+    max-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    background-color: red;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    position: relative;
+   
+  
+ 
+  
+}
 
+.sent2 div{
+   
+    padding-bottom: 10px;
+}
+
+
+
+.message2 {
+    position: absolute;
+    top: 0;
+    background-color: green;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    line-height:30px;
+    text-align: center;
+     border: none;
+    color: red;
+}
+
+
+.button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
