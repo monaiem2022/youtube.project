@@ -83,6 +83,7 @@ let confirmButton = document.getElementById("confirmButton");
 let closeButton = document.getElementById("closeButton");
 let input = document.getElementById("input");
 let exampleModal = document.getElementById("exampleModal");
+let message = document.getElementById("message");
 
 
 
@@ -94,7 +95,6 @@ let exampleModal = document.getElementById("exampleModal");
 confirmButton.onclick=function(){
     
 
-    
         if(recipient.value==''){
     
       signButton.innerHTML="Sign in";
@@ -105,6 +105,7 @@ confirmButton.onclick=function(){
     
     else{
          signButton.innerHTML = recipient.value;
+        message.value = signButton.innerHTML; 
    
     }
  
@@ -178,12 +179,49 @@ $('.control').on('submit',function(e){
         $('<div>'+  email.val() +' ' + ' ' + ' ' + ' : ' +  comment.val() + ' ' + ' ' +
           day + '/'+ month + '/' +year + '</div>').prependTo('.comment-div');
           comment.val(''); 
-          exampleModal
+        
     }
     
 });
 
 // end of the function.
+
+
+$('.send').on('submit',function(q){
+    q.preventDefault();
+    let text1 = $('.text1');
+    let sent = $('.sent');
+    let signbutton = $('#signButton');
+    
+    if(text1.val() !=''){
+    $('<div> '+ signbutton.html() +   ' : ' + text1.val() +'</div>').prependTo('.sent');  
+    text1.val('');                                         // this is for user mesage
+    };
+    
+
+    
+    $('.send2').on('submit',function(t){
+    t.preventDefault();
+      let text2 = $('.text2');
+      let youtube = $('.button');
+    if(text2.val() !=''){
+    $('<div> ' + youtube.html() + ' : ' + text2.val() +'</div>').prependTo('.sent');
+          text2.val('');                                   // this is for youtube reply 
+    }
+    })
+    });
+     
+                                     
+    
+
+
+
+
+        
+
+
+
+
 
 
 
