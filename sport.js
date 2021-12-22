@@ -1,186 +1,4 @@
 
-var body = document.getElementById('body');
-var youtube = document.getElementById('youtube');
-var egypt = document.getElementById('egypt');
-var me  = screen.width;
-
-
-
-
-
-
-
-
-
-body.onload = function(){
-  "use strict";
-   
-    if(me===240 || me===280 || me==360 || me===375 || me===384 || me===320  || me===411 ||      me===412 || me===414 || me===480 || me===393
-      || me===353 || me===540 || me===560 || me===570 || me===575){
-        
-        $('.next-fixed-menu .address a').css('font-size','18px');
-      
-        $('.main-video .under-video #mainVidew').css('font-size','30px');
-        $('.main-video .under-video .sport-icon .view_video').css('font-size','20px');
-        $('.main-video .under-video .sport-icon .icon').css('font-size','20px');
-        $('.main-video .channel-name .main_channelName').css('font-size','20px');
-        $('.main-video .channel-name .main_channelName').css('font-weight','500');
-        $('.main-video .channel-name .main_subscriber').css('font-size','20px');
-        $('.main-video .channel-name .main_subscriber').css('font-weight','400');
-        $('.main-video .channel-name .main_description').css('font-size','20px');
-        $('.main-video .channel-name .comments').css('font-size','20px');
-        $('.main-video .channel-name .sorted').css('font-size','20px');
-        
-        
-        $('.video-list .video_watch .video_title').css('font-size','30px');
-        $('.video-list .video_watch .view_video').css('font-size','20px');
-        
-        
-    }
-    
-        else if(me===576 || me===640 || me===712 || me===768 || me===800 || me===992){
-        $('#signButton').css('font-size','20px');
-        $('.next-fixed-menu .address a').css('font-size','18px');
-      
-        $('.main-video .under-video #mainVidew').css('font-size','30px');
-        $('.main-video .under-video .sport-icon .view_video').css('font-size','22px');
-        $('.main-video .under-video .sport-icon .icon').css('font-size','25px');
-        $('.main-video .channel-name .main_channelName').css('font-size','25px');
-        $('.main-video .channel-name .main_channelName').css('font-weight','500');
-        $('.main-video .channel-name .main_subscriber').css('font-size','20px');
-        $('.main-video .channel-name .main_subscriber').css('font-weight','400');
-        $('.main-video .channel-name .main_description').css('font-size','22px');
-        $('.main-video .channel-name .comments').css('font-size','22px');
-        $('.main-video .channel-name .sorted').css('font-size','22px');
-        
-        
-        $('.video-list .video_watch .video_title').css('font-size','30px');
-        $('.video-list .video_watch .view_video').css('font-size','22px');
-        
-        
-    }
-    
-    
-          else if(me===1000 || me===1024 || me===1200 || me===1280){
-        $('#signButton').css('font-size','16px');
-        $('.next-fixed-menu .address a').css('font-size','18px');
-      
-        $('.main-video .under-video #mainVidew').css('font-size','15px');
-        $('.main-video .under-video .sport-icon .view_video').css('font-size','15px');
-        $('.main-video .under-video .sport-icon .icon').css('font-size','15px');
-        $('.main-video .channel-name .main_channelName').css('font-size','15px');
-        $('.main-video .channel-name .main_channelName').css('font-weight','500');
-        $('.main-video .channel-name .main_subscriber').css('font-size','15px');
-        $('.main-video .channel-name .main_subscriber').css('font-weight','400');
-        $('.main-video .channel-name .main_description').css('font-size','15px');
-        $('.main-video .channel-name .comments').css('font-size','15px');
-        $('.main-video .channel-name .sorted').css('font-size','15px');
-        
-        
-        $('.video-list .video_watch .video_title').css('font-size','15px');
-        $('.video-list .video_watch .view_video').css('font-size','15px');
-        
-        
-    }
-    
-    
-  
-    
-    
-     else
-   
-        $(body).css('background-color','yellow')
-       
-}
-
-
-
-
-
-
-
-// to let the user sign in and see his name on the top dynamic.
-let recipient = document.getElementById("recipient");
-let signButton = document.getElementById("signButton");
-let confirmButton = document.getElementById("confirmButton");
-let closeButton = document.getElementById("closeButton");
-let input = document.getElementById("input");
-let exampleModal = document.getElementById("exampleModal");
-let exampleModalLabel = document.getElementById("exampleModalLabel");
-let message = document.getElementById("message");
-let message2 = document.getElementById("message2");
-let userIcon = document.getElementById('userIcon');
-let text1 = document.getElementById('text1');
-let chat1 = document.getElementById('chat1');
-let allModal = document.getElementById('allModal');
-let button = document.getElementById('button');
-let send = document.getElementById('send');
-
-
-
-text1.onkeyup = function () {
-     $('.chat2').css('visibility','visible');
-
-}
-
- 
-
-
-
-confirmButton.onclick=function(){
-    
-
-        if(recipient.value==''){
-    
-      signButton.innerHTML="Sign in";
-            
-    }
- 
-    else{
-        signButton.innerHTML = recipient.value;
-        message.innerHTML = signButton.innerHTML; 
-    }
- 
-}
-
-
-
-input.onclick = function () {
-    if(signButton.value=='Sign in' || recipient.value=='' ){
-        exampleModal.style.display = 'block';
-
-    }
-    
-
-    else{
-        
-        signButton.innerHTML = recipient.value;
-          allModal.remove()
-    }
-}
-
-
-
-
-
-userIcon.onclick = function () {
-    
-if(signButton.innerHTML=='Sign in' || recipient.value==''){
-    chat1.style.visibility = 'hidden';
-    
-}
-    
-  
-    else{
-    chat1.style.visibility = 'visible';
-        allModal.remove();
-   
-}
-
-    }
-
-
-
 
 
 
@@ -543,6 +361,15 @@ father.onclick = function () {
 }
    
 //
+
+
+
+
+
+
+
+
+
 
 
 
