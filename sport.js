@@ -18,10 +18,10 @@ confirmButton.onclick = function () {
     
     userIcon.onclick = function () {
         if(signButton.innerHTML == 'Sign in'){
-            chat1.style.visibility = 'hidden';
+            chat1.style.display = 'none';
             allModal.style.display = 'block'
         }else{
-            chat1.style.visibility = 'visible';
+            chat1.style.display = 'block';
             allModal.remove();
         }
     }
@@ -31,20 +31,20 @@ confirmButton.onclick = function () {
      $('.close-user').on('click',function(){
         $('.sent').css('height','5px');
          $('.minimize-user').hide();
-         $('.square-user').css('visibility','hidden');
-         $('.chat1').css('visibility','hidden');
-         $('.chat2').css('visibility','hidden');
+         $('.square-user').css('display','none');
+         $('.chat1').css('display','none');
+         $('.chat2').css('display','none');
     })
     
     $('.square-user').on('click',function(){
         $('.sent').css('height','300px');
-        $('.square-user').css('visibility','hidden');
+        $('.square-user').css('display','none');
         $('.minimize-user').show();
     })
     
     $('.minimize-user').on('click',function(){
         $('.sent').css('height','5px');
-        $('.square-user').css('visibility','visible');
+        $('.square-user').css('display','block');
         $('.minimize-user').hide();
     })
     
@@ -56,7 +56,7 @@ confirmButton.onclick = function () {
     })
     
     $('.text1').on('click',function(){
-        $('.chat2').css('visibility','visible');
+        $('.chat2').css('display','block');
     })
     
     
