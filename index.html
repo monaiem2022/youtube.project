@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html  font-family: arial,sans-serif,tahoma;>
     <head>
         <meta charset="utf-8">
         <title>Start Up</title>
@@ -45,12 +45,12 @@
             <hr>
         </div><!--end of top-menu-->
         <!--start of modal to sign in-->
-        
+        <div id="allModal">
         <div class="modal fade modal" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" id="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title " id="exampleModalLabel">New message</h5>
+        <h5 class="modal-title " id="exampleModalLabel">Sign information</h5>
         <button type="button" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -75,7 +75,7 @@
     </div>
   </div>
 </div>
-        
+        </div>
      <!--end of modal to sign in-->
         <div class="container-fluid">
 
@@ -86,6 +86,7 @@
                     <button class="btn btn-outline my-2 my-sm-0" type="submit"><a href="index.html">Sport</a></button>
                     <button class="btn btn-outline my-2 my-sm-0" type="submit"><a href="programmingsearch.html">Programming</a></button>
                     <button class="btn btn-outline my-2 my-sm-0" type="submit"><a href="animalsearch.html">Animal</a></button>
+                    <button class="btn btn-outline my-2 my-sm-0" type="submit"><a href="songsearch.html">Song</a></button>
                     <button class="btn btn-outline my-2 my-sm-0" type="submit"><a href="funnysearch.html">Funny</a></button>
                     <button class="btn btn-outline my-2 my-sm-0" type="submit"><a href="internetsearch.html">Internet</a></button>
                     <button class="btn btn-outline my-2 my-sm-0" type="submit"><a href="storiessearch.html">stories</a></button>
@@ -352,31 +353,36 @@
         
         
         <div class="container-fluid">
-            <div class="chat">
+            <div class="father-chat">
                 <div class="row">
                     <div class="col">
+                        <div class="chat1" id="chat1">
                          <div class="sent">
-                             <input type="text" placeholder="User" disabled class="message" id="message">
-                           
-                            </div>
-                        <form class="send">
-                             <input type="text" class="text1">
-                        </form>
-                        <i class="far fa-comment-dots"></i>
+                             <div class="message" id="message">User</div>
+                             <div class='close-user'><i class="far fa-times"></i></div>
+                             <div class="minimize-user" id="minimizeUser" > <i class="far fa-window-minimize"></i></div>
+                             <div class="square-user" id="square"><i class="far fa-square"></i>
+                                 </div>
+                             </div>
+                             <form class="send" id="send">
+                                    <input class="form-control text1" id="text1" type="search" placeholder="Type your message..." aria-label="Search">
+                                </form>
+                        </div>
+                        <i class="far fa-comment-dots user-icon" id="userIcon" data-toggle="modal" data-target="#exampleModal"></i>
                     </div>  <!--for user chat box-->
                     
                     <div class="col">
                         <div class="chat2">
                    <div class="sent">
-                             <input type="text" placeholder="Youtube Support" disabled class="message2">
-                       <button class="button">youtube</button>
+                       <div type="text" class="message2" id="message2">Youtube Support</div>
+                       <button class="button" id="button">Youtube Support</button>
                             </div>
                         
-                        <form class="send2">
-                           
-                             <input type="text" class="text2">
-                        </form>
-                        <i class="far fa-comment-dots"></i>
+                        
+                             <form class="send2 ">
+                                    <input class="form-control text1" type="search" placeholder="Youtube reply..." aria-label="Search">
+                                </form>
+                       
                     </div>
                     </div>
                 </div>
