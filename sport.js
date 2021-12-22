@@ -173,7 +173,7 @@ if(signButton.innerHTML=='Sign in' || recipient.value==''){
   
     else{
     chat1.style.visibility = 'visible';
-        allModal.remove()
+        allModal.remove();
    
 }
 
@@ -181,19 +181,7 @@ if(signButton.innerHTML=='Sign in' || recipient.value==''){
 
 
 
-    
-let body2 = document.getElementById('body2');
-let soon = document.getElementById('soon');
 
-body2.onload = function () {
-    
-   if(soon.style.display = 'block'){
-       soon.style.display= 'none';
-   }else{
-            soon.style.display= 'block';
-   }
-    
-}
 
 
 
