@@ -118,7 +118,7 @@ let send = document.getElementById('send');
 
 
 
-send.onkeyup = function () {
+text1.onkeyup = function () {
      $('.chat2').css('visibility','visible');
 
 }
@@ -262,7 +262,7 @@ $('.send').on('submit',function(q){
       let text2 = $('.text2');
       let youtube = $('.button');
     if(text2.val() !=''){
-    $('<div> ' + youtube.html() + ' : ' + text2.val() +'</div>').prependTo('.sent2');
+    $('<div> ' + youtube.html() + ' : ' + text2.val() +'</div>').prependTo('.sent');
           text2.val('');                                   // this is for youtube reply 
     }
     })    
