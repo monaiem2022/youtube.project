@@ -1,3 +1,67 @@
+let signButton = document.getElementById("signButton");
+let recipient = document.getElementById("recipient");
+let confirmButton = document.getElementById("confirmButton")
+let closeButton = document.getElementById("closeButton");
+let allModal = document.getElementById("allModal");
+let userIcon = document.getElementById("userIcon");
+let chat1 = document.getElementById("chat1");
+let text1 = document.getElementById("text1");
+let chat2 = document.getElementById("chat2");
+
+
+confirmButton.onclick = function () {
+    if(signButton.innerHTML == 'Sign in' || recipient.value == '' ){
+    }else{
+        signButton.innerHTML = recipient.value;
+        $('.message').html(signButton.innerHTML);
+    }
+    
+    userIcon.onclick = function () {
+        if(signButton.innerHTML == 'Sign in'){
+            chat1.style.visibility = 'hidden';
+            allModal.style.display = 'block'
+        }else{
+            chat1.style.visibility = 'visible';
+            allModal.remove();
+        }
+    }
+    
+
+    
+     $('.close-user').on('click',function(){
+        $('.sent').css('height','5px');
+         $('.minimize-user').hide();
+         $('.square-user').css('visibility','hidden');
+         $('.chat1').css('visibility','hidden');
+         $('.chat2').css('visibility','hidden');
+    })
+    
+    $('.square-user').on('click',function(){
+        $('.sent').css('height','300px');
+        $('.square-user').css('visibility','hidden');
+        $('.minimize-user').show();
+    })
+    
+    $('.minimize-user').on('click',function(){
+        $('.sent').css('height','5px');
+        $('.square-user').css('visibility','visible');
+        $('.minimize-user').hide();
+    })
+    
+    $('.user-icon').on('click',function(){
+        if('.message'.html !=''){
+            $('.sent').css('height','300');
+            $('.minimize-user').show();
+        }
+    })
+    
+    $('.text1').on('click',function(){
+        $('.chat2').css('visibility','visible');
+    })
+    
+    
+}
+
 
 
 
@@ -93,46 +157,6 @@ $('.send').on('submit',function(q){
 
 
 
-
-
- $('.user-icon').on('click',function(){   // chat1 for user send message 
-          $('.close-user').on('click',function(){
-        $('.square-user').css('visibility','hidden');
-         $('.message2').html('Youtube Support');
-              $('.chat2').css('visibility','hidden');
-    
-     })
-     
-     $('.user-icon').on('click',function(){
-         let square = document.getElementById('square');
-         let chat1 = document.getElementById('chat1');
-     
-       
-     
-     })
-     
-     $('.close-user').on('click',function(){
-         
-         $('.chat1').css('visibility','hidden');
-     })
-   
-     
-     $('.minimize-user').on('click',function(){
-         $('.sent').css('height','5px');
-         $('.minimize-user').hide();
-         $('.square-user').css('visibility','visible');
-         $('.text1').hide();
-     });
-     
-     $('.square-user').on('click',function(){
-         $('.sent').css('height','300px');
-         $('.square-user').css('visibility','hidden');
-         $('.minimize-user').show();
-         $('.text1').show();
-      
-     })
-     
-    });
      
                                      
     
