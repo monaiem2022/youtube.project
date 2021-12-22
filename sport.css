@@ -464,11 +464,18 @@ a:hover{
 .text1{
     border: none !important;
     box-shadow: none !important;
+     background-color: #f8f9fa;
 }
 
 
 
 
+
+.text2{
+    border: none !important;
+    box-shadow: none !important;
+     background-color: #f8f9fa;
+}
 
 
 
