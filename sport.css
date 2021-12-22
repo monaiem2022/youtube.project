@@ -395,8 +395,13 @@ a:hover{
    
 }
 
+
+#allModal{
+    display: block;
+}
+
 .chat1{
-    visibility: hidden;
+    display: none;
     position: relative
 }
 
@@ -446,7 +451,7 @@ a:hover{
     right: 30px;
     color: gray;
     cursor: pointer;
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -496,7 +501,7 @@ a:hover{
 }
 
 .chat2{
-    visibility: hidden;
+    display: none;
     position: relative
 }
 
