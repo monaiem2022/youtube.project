@@ -36,25 +36,29 @@ confirmButton.onclick = function () {
          $('.chat2').css('display','none');
     })
     
-    $('.square-user').on('click',function(){
+   $('.square-user').on('click',function(){
         $('.sent').css('height','300px');
         $('.square-user').css('display','none');
         $('.minimize-user').show();
+        $('.text1').show();
     })
     
     $('.minimize-user').on('click',function(){
         $('.sent').css('height','5px');
         $('.square-user').css('display','block');
         $('.minimize-user').hide();
+        $('.text1').hide();
     })
     
     $('.user-icon').on('click',function(){
         if('.message'.html !=''){
             $('.sent').css('height','300');
             $('.minimize-user').show();
+            $('.square-user').css('display','none');
+            $('.text1').show();
         }
     })
-    
+
     $('.text1').on('click',function(){
         $('.chat2').css('display','block');
     })
