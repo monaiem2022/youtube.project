@@ -4,11 +4,13 @@ var youtube = document.getElementById('youtube');
 var egypt = document.getElementById('egypt');
 var me  = screen.width;
 
-console.log(me);
 
-/*
+
+
+
 body.onload = function () {
-    if(me===240 || me===280 || me==360 || me===375 || me===384 || me===320  || me===411 || me===412 || me===414 || me===480 || me===393
+    
+    if(me===240 || me===280 || me===360 || me===375 || me===384 || me===320  || me===411 || me===412 || me===414 || me===480 || me===393
       || me===353){
         // about menu fonts
         $('.youtube').css('font-size','25px');
@@ -74,21 +76,94 @@ body.onload = function () {
 }
 
 
-*/
+
 
 
 body.onload = function(){
   "use strict";
    
-    if(me<768 && me>!768){
-        $('.main-video .under-video .video_title').css('font-size','80px');
-        $('.main-video .under-video .video_title').css('color','80px');
+    if(me===240 || me===280 || me==360 || me===375 || me===384 || me===320  || me===411 ||      me===412 || me===414 || me===480 || me===393
+      || me===353 || me===540 || me===560 || me===570 || me===575){
+        
+        $('.next-fixed-menu .address a').css('font-size','18px');
+      
+        $('.main-video .under-video #mainVidew').css('font-size','30px');
+        $('.main-video .under-video .sport-icon .view_video').css('font-size','20px');
+        $('.main-video .under-video .sport-icon .icon').css('font-size','20px');
+        $('.main-video .channel-name .main_channelName').css('font-size','20px');
+        $('.main-video .channel-name .main_channelName').css('font-weight','500');
+        $('.main-video .channel-name .main_subscriber').css('font-size','20px');
+        $('.main-video .channel-name .main_subscriber').css('font-weight','400');
+        $('.main-video .channel-name .main_description').css('font-size','20px');
+        $('.main-video .channel-name .comments').css('font-size','20px');
+        $('.main-video .channel-name .sorted').css('font-size','20px');
+        
+        
+        $('.video-list .video_watch .video_title').css('font-size','30px');
+        $('.video-list .video_watch .view_video').css('font-size','20px');
+        
+        
     }
+    
+        else if(me===576 || me===640 || me===712 || me===768 || me===800 || me===992){
+        $('#signButton').css('font-size','20px');
+        $('.next-fixed-menu .address a').css('font-size','18px');
+      
+        $('.main-video .under-video #mainVidew').css('font-size','30px');
+        $('.main-video .under-video .sport-icon .view_video').css('font-size','22px');
+        $('.main-video .under-video .sport-icon .icon').css('font-size','25px');
+        $('.main-video .channel-name .main_channelName').css('font-size','25px');
+        $('.main-video .channel-name .main_channelName').css('font-weight','500');
+        $('.main-video .channel-name .main_subscriber').css('font-size','20px');
+        $('.main-video .channel-name .main_subscriber').css('font-weight','400');
+        $('.main-video .channel-name .main_description').css('font-size','22px');
+        $('.main-video .channel-name .comments').css('font-size','22px');
+        $('.main-video .channel-name .sorted').css('font-size','22px');
+        
+        
+        $('.video-list .video_watch .video_title').css('font-size','30px');
+        $('.video-list .video_watch .view_video').css('font-size','22px');
+        
+        
+    }
+    
+    
+          else if(me===1000 || me===1024 || me===1200 || me===1280){
+        $('#signButton').css('font-size','16px');
+        $('.next-fixed-menu .address a').css('font-size','18px');
+      
+        $('.main-video .under-video #mainVidew').css('font-size','15px');
+        $('.main-video .under-video .sport-icon .view_video').css('font-size','15px');
+        $('.main-video .under-video .sport-icon .icon').css('font-size','15px');
+        $('.main-video .channel-name .main_channelName').css('font-size','15px');
+        $('.main-video .channel-name .main_channelName').css('font-weight','500');
+        $('.main-video .channel-name .main_subscriber').css('font-size','15px');
+        $('.main-video .channel-name .main_subscriber').css('font-weight','400');
+        $('.main-video .channel-name .main_description').css('font-size','15px');
+        $('.main-video .channel-name .comments').css('font-size','15px');
+        $('.main-video .channel-name .sorted').css('font-size','15px');
+        
+        
+        $('.video-list .video_watch .video_title').css('font-size','15px');
+        $('.video-list .video_watch .view_video').css('font-size','15px');
+        
+        
+    }
+    
+    
+  
+    
+    
      else
    
-            $(body).css('background-color','yellow')
+        $(body).css('background-color','yellow')
        
 }
+
+
+
+
+
 
 
 // to let the user sign in and see his name on the top dynamic.
@@ -98,12 +173,24 @@ let confirmButton = document.getElementById("confirmButton");
 let closeButton = document.getElementById("closeButton");
 let input = document.getElementById("input");
 let exampleModal = document.getElementById("exampleModal");
+let exampleModalLabel = document.getElementById("exampleModalLabel");
 let message = document.getElementById("message");
+let message2 = document.getElementById("message2");
+let userIcon = document.getElementById('userIcon');
+let text1 = document.getElementById('text1');
+let chat1 = document.getElementById('chat1');
+let allModal = document.getElementById('allModal');
+let button = document.getElementById('button');
+let send = document.getElementById('send');
 
 
 
+send.onkeyup = function () {
+     $('.chat2').css('visibility','visible');
 
+}
 
+ 
 
 
 
@@ -115,13 +202,10 @@ confirmButton.onclick=function(){
       signButton.innerHTML="Sign in";
             
     }
-    
-    
-    
+ 
     else{
-         signButton.innerHTML = recipient.value;
-        message.value = signButton.innerHTML; 
-   
+        signButton.innerHTML = recipient.value;
+        message.innerHTML = signButton.innerHTML; 
     }
  
 }
@@ -138,14 +222,46 @@ input.onclick = function () {
     else{
         
         signButton.innerHTML = recipient.value;
+          allModal.remove()
     }
-    
-    
 }
 
 
 
+
+
+userIcon.onclick = function () {
     
+if(signButton.innerHTML=='Sign in' || recipient.value==''){
+    chat1.style.visibility = 'hidden';
+    
+}
+    
+  
+    else{
+    chat1.style.visibility = 'visible';
+        allModal.remove()
+   
+}
+
+    }
+
+
+
+    
+let body2 = document.getElementById('body2');
+let soon = document.getElementById('soon');
+
+body2.onload = function () {
+    
+   if(soon.style.display = 'block'){
+       soon.style.display= 'none';
+   }else{
+            soon.style.display= 'block';
+   }
+    
+}
+
 
 
 
@@ -208,26 +324,84 @@ $('.send').on('submit',function(q){
     let sent = $('.sent');
     let signbutton = $('#signButton');
     
-    if(text1.val() !=''){
-    $('<div> '+ signbutton.html() +   ' : ' + text1.val() +'</div>').prependTo('.sent');  
-    text1.val('');                                         // this is for user mesage
-    };
+
+    
     
 
     
+    if(text1.val() !=''){
+    $('<div> '+ signbutton.html() +   ' : ' + text1.val() +'</div>').prependTo('.sent');  
+    text1.val('');
+    };
+    
+
+
     $('.send2').on('submit',function(t){
     t.preventDefault();
       let text2 = $('.text2');
       let youtube = $('.button');
     if(text2.val() !=''){
-    $('<div> ' + youtube.html() + ' : ' + text2.val() +'</div>').prependTo('.sent');
+    $('<div> ' + youtube.html() + ' : ' + text2.val() +'</div>').prependTo('.sent2');
           text2.val('');                                   // this is for youtube reply 
     }
-    })
+    })    
+  
+    });
+
+
+
+
+
+
+
+
+
+ $('.user-icon').on('click',function(){   // chat1 for user send message 
+          $('.close-user').on('click',function(){
+        $('.square-user').css('visibility','hidden');
+         $('.message2').html('Youtube Support');
+              $('.chat2').css('visibility','hidden');
+    
+     })
+     
+     $('.user-icon').on('click',function(){
+         let square = document.getElementById('square');
+         let chat1 = document.getElementById('chat1');
+     
+       
+     
+     })
+     
+     $('.close-user').on('click',function(){
+         
+         $('.chat1').css('visibility','hidden');
+     })
+   
+     
+     $('.minimize-user').on('click',function(){
+         $('.sent').css('height','5px');
+         $('.minimize-user').hide();
+         $('.square-user').css('visibility','visible');
+         $('.text1').hide();
+     });
+     
+     $('.square-user').on('click',function(){
+         $('.sent').css('height','300px');
+         $('.square-user').css('visibility','hidden');
+         $('.minimize-user').show();
+         $('.text1').show();
+      
+     })
+     
     });
      
                                      
     
+
+
+  
+    
+
 
 
 
@@ -252,9 +426,7 @@ $('.video_watch').on('click', function (e) {
      $('.main_channelName').text($(this).find('.channelUnder').text());
     $('.sign').text($(this).find('.malek').text());
     $('.main_image').attr('src',$(this).find('img').attr('src'));
-  
-   
-    
+
 });
 
 
@@ -267,9 +439,10 @@ $('.video_watch').on('click', function (e) {
      
     });
 
-
- 
 //end of the function.
+
+
+
 
 
 
@@ -448,8 +621,7 @@ father.onclick = function () {
     
 }
    
-
-
+//
 
 
 

@@ -322,13 +322,6 @@ a:hover{
 }
 
 
-.sport .video-list .video_watch .video_title{
-    
-    font-weight: thin;
-    font-size: 18px;
-}
-
-
 
 
 
@@ -384,13 +377,14 @@ a:hover{
     height: 300px;
     max-width: 300px;
     overflow-x: hidden;
-    overflow-y: scroll; 
-    background-color: red;
+    overflow-y: inherit; 
+    background-color: darkgray;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 30px;
     position: relative;
+    box-shadow: 5px 5px 5px  gray;
 
   
 }
@@ -398,22 +392,75 @@ a:hover{
 .sent div{
    
     padding-bottom: 10px;
+   
 }
 
+.chat1{
+    visibility: hidden;
+    position: relative
+}
 
+.user-icon{
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+}
 
 .message {
     position: absolute;
     top: 0;
-    background-color: green;
+    background-color: #eee;
     height: 30px;
     width: 100%;
     left: 0;
     line-height:30px;
     text-align: center;
-     border: none;
+    border: none;
     color: red;
+    box-shadow: 5px 5px 5px  gray;
+    
+   
 }
+
+
+.close-user{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.minimize-user{
+    position: absolute;
+    top: -4px;
+    right: 30px;
+    color: gray;
+    cursor: pointer;
+   
+}
+
+.square-user{
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    color: gray;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+
+
+
+.send{
+    width: 50%;
+}
+
+.text1{
+    border: none !important;
+    box-shadow: none !important;
+}
+
 
 
 
@@ -432,10 +479,7 @@ a:hover{
     padding-right: 10px;
     padding-top: 30px;
     position: relative;
-   
-  
- 
-  
+
 }
 
 .sent2 div{
@@ -445,17 +489,29 @@ a:hover{
 
 
 
+
+
+.send2{
+    width: 50%;
+}
+
+.chat2{
+    visibility: hidden;
+    position: relative
+}
+
 .message2 {
     position: absolute;
     top: 0;
-    background-color: green;
+    background-color: #eee;
     height: 30px;
     width: 100%;
     left: 0;
     line-height:30px;
     text-align: center;
      border: none;
-    color: red;
+     color: red;
+    box-shadow: 5px 5px 5px  gray;
 }
 
 
@@ -465,4 +521,7 @@ a:hover{
     left: 0;
     display: none;
 }
+
+
+
 
